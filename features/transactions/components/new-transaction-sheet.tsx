@@ -1,4 +1,4 @@
- import { z } from "zod";
+import { z } from "zod";
 import { Loader2 } from "lucide-react";
 
 import { TransactionForm } from "@/features/transactions/components/transaction-form";
