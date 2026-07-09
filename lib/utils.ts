@@ -23,8 +23,8 @@ export function formatCurrency(value: number) {
 };
 
 export function calculatePercentageChange(
-    current: number,
-    previous: number,
+  current: number,
+  previous: number,
 ) {
   if (previous === 0) {
     return previous === current ? 0 : 100;
@@ -34,13 +34,13 @@ export function calculatePercentageChange(
 };
 
 export function fillMissingDays(
-    activeDays: {
-      date: Date,
-      income: number;
-      expenses: number;
-    }[],
-    startDate: Date,
-    endDate: Date,
+  activeDays: {
+    date: Date,
+    income: number;
+    expenses: number;
+  }[],
+  startDate: Date,
+  endDate: Date,
 ) {
   if (activeDays.length === 0) {
     return [];
@@ -89,10 +89,10 @@ export function formatDateRange (period?: Period) {
 };
 
 export function formatPercentage(
-    value: number,
-    options: { addPrefix?: boolean } = {
-      addPrefix: false,
-    },
+  value: number,
+  options: { addPrefix?: boolean } = {
+    addPrefix: false,
+  },
 ) {
   const result = new Intl.NumberFormat("en-US", {
     style: "percent",
